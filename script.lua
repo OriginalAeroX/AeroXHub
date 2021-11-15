@@ -121,7 +121,7 @@ end
 if game.PlaceId == 286090429 then
     -- Arsenal
     local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/UI-Libraries/main/Venyx/Source.lua"))()
-    local venyx = library.new("AeroX Hub | Arsenal", 5013109572)
+    local AeroX = library.new("AeroX Hub | Arsenal", 5013109572)
 
     -- themes
     local themes = {
@@ -132,4 +132,40 @@ if game.PlaceId == 286090429 then
         DarkContrast = Color3.fromRGB(14, 14, 14),  
         TextColor = Color3.fromRGB(255, 255, 255)
     }
+    -- Combat
+    local Combat = AeroX:addPage("Combat", 5012544693)
+    local HitboxExtenderSection = Combat:addSection("Hitbox Extender")
+    local SilentAimSection = Combat:addSection("Silent Aim")
+    local AimbotSection = Combat:addSection("Aimbot")
+    local FOVSection = Combat:addSection("FOV")
+
+    HitboxExtenderSection:addButton("Hitbox Extender", "Extends hitboxes", function()
+        loadstring(game:HttpGet("https://pastebin.com/raw/gRgMfu2T",true))()
+        
+    -- Render
+    local Render = AeroX:addPage("Render", 5012544693)
+    local RadarSection = Render:addSection("Radar")
+    local ESPSection - Render:addSection("ESP")
+
+    RadarSection:addButton("Radar",function()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/CokeHub/Coke-Hub/main/Radar"))()
+    
+
+    -- Player
+    local PlayerTab = AeroX:addPage("Player", 5012544693)
+    local InfiniteJumpSection = Player:addSection("Infinite Jump")
+    local WalkSpeedSection = Player:addSection("WalkSpeed")
+    local JumppowerSection = Player:addSection("JumpPower")
+    local Player = game:GetService("Players").LocalPlayer
+    local Mouse = Player:GetMouse()
+
+    InfiniteJumpSection:addToggle("Infinite Jump", "Can jump forever", function()
+        Mouse.KeyDown:connect(function(k)
+        if k:byte() == 32 then
+        Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+        Humanoid:ChangeState("Jumping")
+        wait(0.1)
+        Humanoid:ChangeState("Seated")
+        end
+    end)
 end
