@@ -38,7 +38,6 @@ Bolts = main:Tab('LocalPlayer')
 ServerW = main:Tab('FE/Trolling')
 FEW = main:Tab('FE Dev Stuff')
 VisualsW = main:Tab('Visuals')
-FarmingW = main:Tab('Kill All')
 MiscW = main:Tab('Credits')
 
 
@@ -921,11 +920,6 @@ VisualsW:Colorpicker(
 		Config.Visuals.EnemyColor = Color
 	end
 )
-
-FarmingW:Button('Soon',function()
-    print("broken")
-end)
-FarmingW:Label('Auto Farm Is For Privte Testers')
 
 
 MiscW:Label('AeroX Hub | Arsenal')
