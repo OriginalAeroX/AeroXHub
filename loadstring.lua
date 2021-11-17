@@ -1,1 +1,1 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/OriginalAeroX/AeroXHub/main/loader.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/OriginalAeroX/AeroXHub/main/loader.lua", true))()
