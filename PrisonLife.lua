@@ -1,4 +1,3 @@
-if game.PlaceId == 155615604 then
     -- Prison Life
     local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
     local Window = Library.CreateLib("AeroX Hub | Prison Life", "Ocean")
