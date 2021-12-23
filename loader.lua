@@ -14,3 +14,7 @@ if game.PlaceId == 286090429 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/OriginalAeroX/game.scripts.net/main/Arsenal.lua", true))()
   return
 end
+if game.PlaceId == 2377868063 then
+  loadstring(game:HttpGet("https://raw.githubusercontent.com/OriginalAeroX/game.scripts.net/main/Strucid.lua", true))()
+  return
+end
