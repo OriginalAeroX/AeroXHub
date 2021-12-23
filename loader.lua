@@ -17,4 +17,4 @@ end
 if game.PlaceId == 2377868063 then
   loadstring(game:HttpGet("https://raw.githubusercontent.com/OriginalAeroX/game.scripts.net/main/Strucid.lua", true))()
   return
-end
+end -- yes
